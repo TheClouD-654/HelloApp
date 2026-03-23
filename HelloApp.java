@@ -1,13 +1,17 @@
+import java.util.Scanner;
 public class HelloApp {
-    void main(String[] args) {
+    public static void main(String[] args) {
+        
         StringBuilder nameBuilder = new StringBuilder();
-        boolean first = true;
-        for (String arg : args) {
-            if (!first) {
-                nameBuilder.append(" ");
-            }
-            nameBuilder.append(arg);
-            first = false;
+        for (String input:args) {
+            nameBuilder.append(input).append(", ");
         }
+        String name;
+        if (nameBuilder.length()>0) {
+            System.out.println("Enter your name:");
+            S
+            name = nameBuilder.substring(0, nameBuilder.length() - 2);
+        }
+        System.out.println("Hello, " + name + "!");
     }
 }
