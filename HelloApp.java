@@ -1,5 +1,6 @@
 import java.util.Scanner;
-public class HelloApp {
+public class HelloApp{
+
     private String name;
     String result;
 
